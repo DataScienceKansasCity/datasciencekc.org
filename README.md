@@ -9,7 +9,7 @@
 - **Website:** [datasciencekansascity.github.io](https://datasciencekansascity.github.io)
 - **Meetup:** [Data Science KC Meetup Group](https://www.meetup.com/data-science-kc/)
 - **Slack:** [Data Science KC Slack](https://bit.ly/2p19KjT)
-- **LinkedIn** [Data Science KC LinkedIn group](https://www.linkedin.com/groups/14313213/)
+- **LinkedIn:** [Data Science KC LinkedIn group](https://www.linkedin.com/groups/14313213/)
 - **Email:** [dskc.group@gmail.com](mailto:dskc.group@gmail.com)
 
 ---
