@@ -39,12 +39,14 @@ DataScienceKansasCity.github.io/
 ### Installation
 
 1. **Clone the repository**
+
    ```bash
    git clone https://github.com/DataScienceKansasCity/DataScienceKansasCity.github.io.git
    cd DataScienceKansasCity.github.io
    ```
 
 2. **Install Hugo** (if not already installed)
+
    ```bash
    # On macOS with Homebrew
    brew install hugo
@@ -57,6 +59,7 @@ DataScienceKansasCity.github.io/
    ```
 
 3. **Run the development server**
+
    ```bash
    hugo server -D
    ```
@@ -70,6 +73,7 @@ DataScienceKansasCity.github.io/
 
 1. Create a new markdown file in the `content/` directory
 2. Add front matter at the top of the file:
+
    ```markdown
    ---
    title: "Page Title"
@@ -77,6 +81,7 @@ DataScienceKansasCity.github.io/
    date: 2025-01-01
    ---
    ```
+
 3. Add your content below the front matter
 
 ### Updating the Homepage
@@ -87,6 +92,7 @@ Edit `content/_index.md` to modify the homepage content. The file uses standard 
 
 1. Place images in the `static/` directory
 2. Reference them in markdown using relative paths:
+
    ```markdown
    ![Alt text](/path/to/image.jpg)
    ```
@@ -140,6 +146,7 @@ This repository is configured for GitHub Pages deployment:
 ### Manual Deployment
 
 1. Build the site:
+
    ```bash
    hugo --minify
    ```
