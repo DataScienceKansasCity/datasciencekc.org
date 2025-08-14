@@ -31,6 +31,7 @@ Check out our [Meetup page](https://www.meetup.com/data-science-kc/) to RSVP for
 Most events are held on the second Thursday of each month at 6:00pm at [Keystone Colab](https://www.keystonedistrict.org/) in the Crossroads.
 
 **Featured events:**
+
 - **University Showcase** in the Fall, where students and recent graduates from local universities share their data science projects and research
 - **Startup Showcase** in the Spring, where local startups share how data science informs their business
 - **DSKC Social** in the Summer, where we gather at a local restaurant or brewery to network and socialize
@@ -60,6 +61,7 @@ Here is a sampling of the kinds of presentations we've had in the past and gener
 We're always looking for new ideas and topics to cover, and we're not tied to any particular tool or technology.
 
 **Applications of data science and related topics:**
+
 - Data Engineering & Architecture *(e.g. Data Pipelines, Data Warehousing, Data Lakes)*
 - Statistical Analysis *(e.g. Hypothesis Testing, A/B Testing, Regression Analysis)*
 - Machine Learning & AI *(e.g. Supervised, Unsupervised, Reinforcement Learning)*
@@ -67,12 +69,14 @@ We're always looking for new ideas and topics to cover, and we're not tied to an
 - Business Intelligence *(e.g. Data Warehousing, Data Visualization, Dashboards)*
 
 **Industry insights and academic research:**
+
 - Industry Applications *(e.g. Finance, Operations, Healthcare, Manufacturing)*
 - Data-driven Decision Making *(e.g. Business Intelligence, Data Visualization)*
 - Academic Research *(e.g. Bioinformatics, Healthcare, Economics, Social Sciences, etc.)*
 - Data Ethics & Privacy *(e.g. Data Governance, Data Security)*
 
 **Data science tools and technologies:**
+
 - Python, R, SQL, and More *(Software Libraries, Frameworks)*
 - Big Data Technologies *(Working with large datasets, distributed computing)*
 - Deep Learning & Neural Networks *(Training models, inference)*
@@ -95,9 +99,11 @@ Data Science KC is proud to partner with [KC Digital Drive](https://www.kcdigita
 ## 🤝 Get Involved
 
 ### Meetup Group
+
 Visit our [Meetup page](https://www.meetup.com/data-science-kc/) to join and stay updated on upcoming in-person events.
 
 ### Connect Online
+
 - **Slack Community:** [Join our active Slack workspace](https://bit.ly/2p19KjT) for ongoing discussions
 - **LinkedIn Group:** [Join our LinkedIn group](https://www.linkedin.com/groups/14313213/) to connect with other data professionals
 
@@ -117,10 +123,12 @@ We are also eager to collaborate with other local organizations seeking to grow 
 Interested in sponsoring an event or partnering with us? [Contact us](#contact) to learn more.
 
 Our partners include:
+
 - [Keystone Colab](https://www.keystonedistrict.org/)
 - [KC Digital Drive](https://www.kcdigitaldrive.org/)
 
 Recent sponsors include:
+
 - [Americo](https://www.americo.com/)
 - [Black & Veatch](https://www.bv.com/)
 - [Burns & McDonnell](https://www.burnsmcdonnell.com/)
@@ -132,6 +140,7 @@ Recent sponsors include:
 - [Stacked Analytics](https://stackedanalytics.com/)
 - [TEK Systems](https://www.teksystems.com/)
 - [Talent Scout](https://www.teamtalentscout.com/)
+
 ---
 
 ## 📬 Contact & Connect

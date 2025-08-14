@@ -21,6 +21,7 @@ We welcome various types of contributions:
 1. **Fork the repository**
    - Click the "Fork" button on GitHub
    - Clone your fork locally:
+
      ```bash
      git clone https://github.com/YOUR_USERNAME/DataScienceKansasCity.github.io.git
      cd DataScienceKansasCity.github.io
@@ -29,11 +30,13 @@ We welcome various types of contributions:
 2. **Set up your development environment**
    - Install Hugo (see [ARCHITECTURE.md](ARCHITECTURE.md) for instructions)
    - Run the development server:
+
      ```bash
      hugo server -D
      ```
 
 3. **Create a feature branch**
+
    ```bash
    git checkout -b feature/your-feature-name
    ```
@@ -44,12 +47,14 @@ We welcome various types of contributions:
    - Ensure the site builds without errors
 
 5. **Commit your changes**
+
    ```bash
    git add .
    git commit -m "Add your feature description"
    ```
 
 6. **Push to your fork**
+
    ```bash
    git push origin feature/your-feature-name
    ```
