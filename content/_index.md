@@ -99,7 +99,7 @@ Visit our [Meetup page](https://www.meetup.com/data-science-kc/) to join and sta
 
 ### Connect Online
 - **Slack Community:** [Join our active Slack workspace](https://bit.ly/2p19KjT) for ongoing discussions
-- **LinkedIn Group:** [Join our LinkedIn group](https://www.linkedin.com/groups/14560000/) to connect with other data professionals
+- **LinkedIn Group:** [Join our LinkedIn group](https://www.linkedin.com/groups/14313213/) to connect with other data professionals
 
 {{< figure src="/images/meetup-photos/Social-2.jpg" alt="DSKC Social Event" caption="Networking and socializing with other data professionals" class="w-2/3 mx-auto" >}}
 
