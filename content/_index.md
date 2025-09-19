@@ -26,7 +26,7 @@ Data Science Kansas City is a meetup group connecting data professionals in the 
 - **All skill levels welcome** - from beginners to experts
 - **Networking opportunities** at every event
 
-Check out our [Meetup page](https://www.meetup.com/data-science-kc/) to RSVP for upcoming events.
+Check out our [Meetup page](/meetup) to RSVP for upcoming events.
 
 Most events are held on the second Thursday of each month at 6:00pm at [Keystone Colab](https://www.keystonedistrict.org/) in the Crossroads.
 
@@ -100,12 +100,12 @@ Data Science KC is proud to partner with [KC Digital Drive](https://www.kcdigita
 
 ### Meetup Group
 
-Visit our [Meetup page](https://www.meetup.com/data-science-kc/) to join and stay updated on upcoming in-person events.
+Visit our [Meetup page](/meetup) to join and stay updated on upcoming in-person events.
 
 ### Connect Online
 
-- **Slack Community:** [Join our active Slack workspace](https://bit.ly/2p19KjT) for ongoing discussions
-- **LinkedIn Group:** [Join our LinkedIn group](https://www.linkedin.com/groups/14313213/) to connect with other data professionals
+- **Slack Community:** [Join our active Slack workspace](/slack) for ongoing discussions
+- **LinkedIn Group:** [Join our LinkedIn group](/linkedin) to connect with other data professionals
 
 {{< figure src="/images/meetup-photos/Social-2.jpg" alt="DSKC Social Event" caption="Networking and socializing with other data professionals" class="w-2/3 mx-auto" >}}
 
@@ -148,9 +148,9 @@ Recent sponsors include:
 **Questions? Ideas? Want to get involved?**
 
 - **Email:** [dskc.group@gmail.com](mailto:dskc.group@gmail.com)
-- **Meetup:** [Data Science KC Meetup Group](https://www.meetup.com/data-science-kc/)
-- **Slack:** [Data Science KC Slack](https://bit.ly/2p19KjT)
-- **LinkedIn:** [Data Science Kansas City](https://www.linkedin.com/company/data-science-kansas-city)
+- **Meetup:** [Data Science KC Meetup Group](/meetup)
+- **Slack:** [Data Science KC Slack](/slack)
+- **LinkedIn:** [Data Science Kansas City](/linkedin)
 
 ---
 
