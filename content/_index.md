@@ -131,7 +131,7 @@ Recent sponsors include:
 
 - [Americo](https://www.americo.com/)
 - [Black & Veatch](https://www.bv.com/)
-- [Burns & McDonnell](https://www.burnsmcdonnell.com/)
+- [Burns & McDonnell](https://www.burnsmcd.com/)
 - [C2FO](https://www.c2fo.com/)
 - [Creative Planning](https://www.creativeplanning.com/)
 - [Ecco Select](https://www.eccoselect.com/)
