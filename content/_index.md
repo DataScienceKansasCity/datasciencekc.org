@@ -10,6 +10,10 @@ hideTitle: true
 
 ## 🚀 Welcome to the Data Science Kansas City Community!
 
+<div style="text-align: center; margin: 2rem 0;">
+{{< button href="https://www.meetup.com/data-science-kc/events/" target="_blank" rel="noopener noreferrer" >}}<span style="font-size: 1.25em;">📅 See Upcoming Events on Meetup</span>{{< /button >}}
+</div>
+
 Data Science Kansas City is a meetup group connecting data professionals in the Kansas City metropolitan area. Whether you're a seasoned data scientist, a machine learning engineer, a data analyst, a student, or just starting your journey in data science, you'll find a welcoming community here.
 
 **Our mission:** Foster the local data community by bringing together supply of & demand for data professionals in our region using in-person events that drive sharing of knowledge and increase connection.
