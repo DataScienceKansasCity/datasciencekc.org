@@ -8,10 +8,10 @@ title = "Data Science Kansas City"
   displayName = "EN"
   isoCode = "en"
   rtl = false
-  dateFormat = "2 January 2006"
+  dateFormat = "January 2, 2006"
   logo = "img/dskc_icon_square.png"
   secondaryLogo = "img/dskc_icon_square.png"
-  # description = "My awesome website"
+  description = "Data Science Kansas City is a meetup group connecting data professionals in the Kansas City metropolitan area."
   # copyright = "Copy, _right?_ :thinking_face:"
 
 [params.author]
