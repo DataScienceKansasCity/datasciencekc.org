@@ -24,7 +24,7 @@ Data Science Kansas City is a meetup group connecting data professionals in the 
 
 ## 📅 Our Events
 
-{{< figure src="/images/meetup-photos/Showcase-2.jpg" alt="Data Science Meetup Event" caption="Join us for engaging discussions and hands-on learning" class="float-right w-1/4 ml-4" >}}
+{{< figure src="/img/meetup-photos/Showcase-2.jpg" alt="Data Science Meetup Event" caption="Join us for engaging discussions and hands-on learning" class="float-right w-1/4 ml-4" >}}
 
 - **Free to attend** - no membership fees
 - **All skill levels welcome** - from beginners to experts
@@ -55,7 +55,7 @@ This group is geared towards data scientists doing statistical analysis, predict
 Not a data scientist, but interested in this type of data science?
 Attend the meetup and learn more about what data scientists do.
 
-{{< figure src="/images/meetup-photos/Showcase-1.jpg" alt="Data Science Meetup Event" caption="Discuss and network with other data professionals before and after the monthly presentation" class="float-right w-1/4 ml-4" >}}
+{{< figure src="/img/meetup-photos/Showcase-1.jpg" alt="Data Science Meetup Event" caption="Discuss and network with other data professionals before and after the monthly presentation" class="float-right w-1/4 ml-4" >}}
 
 ---
 
@@ -96,7 +96,7 @@ Currently, the group is organized by Aaron Moss, Nathan Smith, and Bradley Dice.
 Data Science KC is proud to partner with [KC Digital Drive](https://www.kcdigitaldrive.org/) in our aims of contributing to workforce development and advancing technology in the Kansas City area.
 [Keystone Colab](https://www.keystonedistrict.org/) graciously hosts our events.
 
-{{< figure src="/images/meetup-photos/Social-1.jpg" alt="DSKC Social Event" caption="Building connections and sharing knowledge together" class="w-2/3 mx-auto" >}}
+{{< figure src="/img/meetup-photos/Social-1.jpg" alt="DSKC Social Event" caption="Building connections and sharing knowledge together" class="w-2/3 mx-auto" >}}
 
 ---
 
@@ -111,7 +111,7 @@ Visit our [Meetup page](/meetup) to join and stay updated on upcoming in-person 
 - **Slack Community:** [Join our active Slack workspace](/slack) for ongoing discussions
 - **LinkedIn Group:** [Join our LinkedIn group](/linkedin) to connect with other data professionals
 
-{{< figure src="/images/meetup-photos/Social-2.jpg" alt="DSKC Social Event" caption="Networking and socializing with other data professionals" class="w-2/3 mx-auto" >}}
+{{< figure src="/img/meetup-photos/Social-2.jpg" alt="DSKC Social Event" caption="Networking and socializing with other data professionals" class="w-2/3 mx-auto" >}}
 
 ---
 
