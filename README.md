@@ -18,6 +18,7 @@
 
 - **[ARCHITECTURE.md](ARCHITECTURE.md)** - Technical documentation, setup instructions, and deployment guide
 - **[CONTRIBUTING.md](CONTRIBUTING.md)** - How to contribute to the website
+- **[TESTING.md](TESTING.md)** - Frontend testing philosophy and E2E standards
 
 ---
 
