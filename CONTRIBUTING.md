@@ -155,6 +155,19 @@ hugo server -D
 hugo --gc --minify
 ```
 
+### Frontend E2E Testing
+
+```bash
+# Install JS dependencies
+npm install
+
+# Install Playwright browser runtime (first time only)
+npx playwright install chromium
+
+# Run end-to-end smoke tests (auto-starts Hugo on localhost:1313)
+npm run test:e2e
+```
+
 ## 📞 Getting Help
 
 If you need help or have questions:
