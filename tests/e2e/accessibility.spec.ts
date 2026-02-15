@@ -2,20 +2,34 @@ import { expect, test } from "@playwright/test";
 import AxeBuilder from "@axe-core/playwright";
 
 const routes = ["/", "/university-showcase/"];
+const appearances = ["light", "dark"] as const;
 
-for (const route of routes) {
-  test(`no critical axe violations on ${route}`, async ({ page }) => {
-    await page.goto(route);
+for (const appearance of appearances) {
+  for (const route of routes) {
+    test(`no serious or critical axe violations on ${route} (${appearance})`, async ({ page }) => {
+      await page.addInitScript((mode: "light" | "dark") => {
+        localStorage.setItem("appearance", mode);
+      }, appearance);
 
-    const results = await new AxeBuilder({ page }).withTags(["wcag2a", "wcag2aa"]).analyze();
+      await page.goto(route);
 
-    const criticalViolations = results.violations.filter((violation) => violation.impact === "critical");
+      const results = await new AxeBuilder({ page })
+        .withTags(["wcag2a", "wcag2aa"])
+        // Ignore known third-party embed noise from YouTube player internals.
+        .exclude('iframe[src*="youtube.com"]')
+        .exclude('iframe[src*="youtube-nocookie.com"]')
+        .analyze();
 
-    expect(
-      criticalViolations,
-      `Critical a11y violations on ${route}: ${criticalViolations
-        .map((violation) => violation.id)
-        .join(", ")}`
-    ).toEqual([]);
-  });
+      const blockingViolations = results.violations.filter(
+        (violation) => violation.impact === "critical" || violation.impact === "serious"
+      );
+
+      expect(
+        blockingViolations,
+        `Serious/critical a11y violations on ${route} (${appearance}): ${blockingViolations
+          .map((violation) => violation.id)
+          .join(", ")}`
+      ).toEqual([]);
+    });
+  }
 }

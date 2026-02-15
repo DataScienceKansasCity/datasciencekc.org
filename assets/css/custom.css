@@ -1,0 +1,28 @@
+/*
+  Data Science KC color overrides.
+*/
+:root {
+  --color-primary-400: 11, 156, 104;
+  --color-primary-500: 10, 145, 97;
+  --color-primary-600: 10, 135, 91;
+  --color-primary-700: 8, 112, 74;
+}
+
+.dark {
+  /* Improve contrast for small muted text in dark mode. */
+  --color-neutral-400: 143, 174, 170;
+  /* Keep white text on primary-800 buttons above 4.5:1 contrast. */
+  --color-primary-800: 7, 132, 117;
+}
+
+/* Ensure default prose links use a contrast-safe tone on light backgrounds. */
+.prose a {
+  color: rgb(var(--color-primary-600));
+  text-decoration-line: underline;
+  text-underline-offset: 0.18em;
+  text-decoration-thickness: 0.08em;
+}
+
+.dark .prose a {
+  color: #10d48e;
+}

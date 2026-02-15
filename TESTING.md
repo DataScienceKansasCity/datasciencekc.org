@@ -69,4 +69,3 @@ If you are an AI agent contributing code:
    - one responsive check if layout is affected
    - one accessibility assertion if semantics/interaction changed
 4. Do not remove tests to make CI pass unless the behavior is intentionally removed and the PR explains why.
-
