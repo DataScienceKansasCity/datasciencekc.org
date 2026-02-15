@@ -10,6 +10,7 @@
     "test:e2e:debug": "playwright test --debug"
   },
   "devDependencies": {
+    "@axe-core/playwright": "^4.11.1",
     "@playwright/test": "^1.54.2",
     "typescript": "^5.9.2"
   }
