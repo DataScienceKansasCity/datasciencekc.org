@@ -168,6 +168,8 @@ npx playwright install chromium
 npm run test:e2e
 ```
 
+See [TESTING.md](TESTING.md) for the full testing philosophy, layering strategy, and expectations for future changes.
+
 ## 📞 Getting Help
 
 If you need help or have questions:
