@@ -29,7 +29,23 @@ for (const redirectCase of redirects) {
     expect(response.ok()).toBeTruthy();
 
     const html = await response.text();
-    expect(html).toContain(`<meta http-equiv="refresh" content="0;url=${redirectCase.destination}">`);
-    expect(html).toContain(`<link rel="canonical" href="${redirectCase.destination}">`);
+    expect(html).toMatch(
+      new RegExp(
+        `<meta[^>]*http-equiv\\s*=\\s*["']?refresh["']?[^>]*content\\s*=\\s*["']?0;url=${redirectCase.destination.replace(
+          /[.*+?^${}()|[\]\\]/g,
+          "\\$&"
+        )}["']?`,
+        "i"
+      )
+    );
+    expect(html).toMatch(
+      new RegExp(
+        `<link[^>]*rel\\s*=\\s*["']?canonical["']?[^>]*href\\s*=\\s*["']?${redirectCase.destination.replace(
+          /[.*+?^${}()|[\]\\]/g,
+          "\\$&"
+        )}["']?`,
+        "i"
+      )
+    );
   });
 }
