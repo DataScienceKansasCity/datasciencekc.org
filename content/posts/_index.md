@@ -1,5 +1,5 @@
 ---
-title: "Events & Announcements"
+title: "Announcements"
 description: "Calls for speakers, event updates, and post-event recaps from Data Science Kansas City."
 cascade:
   showAuthor: false

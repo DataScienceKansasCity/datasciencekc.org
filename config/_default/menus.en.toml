@@ -16,7 +16,7 @@
   weight = 10
 
 [[main]]
-  name = "Events & Announcements"
+  name = "Announcements"
   pageRef = "posts"
   weight = 20
 

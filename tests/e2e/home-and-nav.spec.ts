@@ -9,7 +9,7 @@ test("home page smoke test", async ({ page }) => {
   ).toBeVisible();
   await expect(page.getByRole("heading", { level: 2, name: "Announcements" })).toBeVisible();
   await expect(page.getByRole("link", { name: "Home" })).toBeVisible();
-  await expect(page.getByRole("link", { name: "Events & Announcements" })).toBeVisible();
+  await expect(page.getByRole("link", { name: "Announcements" })).toBeVisible();
   await expect(page.getByRole("link", { name: /See all events on Meetup/i })).toBeVisible();
   await expect(page.locator('iframe[src*="youtube.com"]')).toBeAttached();
 });
@@ -26,16 +26,16 @@ test("mobile nav opens, shows links, and closes", async ({ page }) => {
 
   await expect(menuWrapper).toHaveCSS("visibility", "visible");
   await expect(menuWrapper.getByRole("link", { name: "Home" })).toBeVisible();
-  await expect(menuWrapper.getByRole("link", { name: "Events & Announcements" })).toBeVisible();
+  await expect(menuWrapper.getByRole("link", { name: "Announcements" })).toBeVisible();
 
   await page.getByTestId("mobile-menu-close-button").click();
   await expect(menuWrapper).toHaveCSS("visibility", "hidden");
 });
 
-test("events and announcements index page loads", async ({ page }) => {
+test("announcements index page loads", async ({ page }) => {
   await page.goto("/posts/");
-  await expect(page).toHaveTitle(/Events.+Announcements/i);
-  await expect(page.locator("main header h1")).toHaveText(/Events & Announcements/i);
+  await expect(page).toHaveTitle(/Announcements/i);
+  await expect(page.locator("main header h1")).toHaveText(/Announcements/i);
   await expect(
     page.getByRole("link", { name: /Call for Speakers: Startup Showcase \(May 14, 2026\)/i })
   ).toBeVisible();
