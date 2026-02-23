@@ -1,7 +1,7 @@
 import { expect, test } from "@playwright/test";
 import AxeBuilder from "@axe-core/playwright";
 
-const routes = ["/", "/university-showcase/"];
+const routes = ["/", "/posts/"];
 const appearances = ["light", "dark"] as const;
 
 for (const appearance of appearances) {

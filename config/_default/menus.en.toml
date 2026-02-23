@@ -12,18 +12,31 @@
 
 [[main]]
   name = "Home"
-  pageRef = "home"
+  url = "/"
   weight = 10
 
 [[main]]
-  name = "Startup Showcase"
-  pageRef = "startup-showcase"
-  weight = 15
-
-[[main]]
-  name = "University Showcase"
-  pageRef = "university-showcase"
+  name = "Events & Announcements"
+  pageRef = "posts"
   weight = 20
+
+[[subnavigation]]
+  name = "Meetup"
+  pageRef = "meetup"
+  weight = 10
+  params = { icon = "fa-solid fa-calendar-days" }
+
+[[subnavigation]]
+  name = "LinkedIn"
+  pageRef = "linkedin"
+  weight = 20
+  params = { icon = "fa-brands fa-linkedin" }
+
+[[subnavigation]]
+  name = "Slack"
+  pageRef = "slack"
+  weight = 30
+  params = { icon = "fa-brands fa-slack" }
 
 
 # -- Footer Menu --

@@ -26,3 +26,8 @@
 .dark .prose a {
   color: #10d48e;
 }
+
+/* Remove typography plugin line-length cap so prose can fill available width. */
+.prose {
+  max-width: none;
+}

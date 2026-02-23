@@ -1,6 +1,6 @@
 import { expect, test } from "@playwright/test";
 
-const crawlSeeds = ["/", "/university-showcase/"];
+const crawlSeeds = ["/", "/posts/"];
 
 function normalizeInternalPath(rawHref: string): string | null {
   if (!rawHref) {

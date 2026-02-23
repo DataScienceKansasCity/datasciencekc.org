@@ -1,11 +1,16 @@
 ---
-title: "Data Science KC Startup Showcase"
+title: "Call for Speakers: Startup Showcase (May 14, 2026)"
 description: "The Data Science KC Startup Showcase features local startups using data to drive business impact."
-hideTitle: true
-layout: "simple"
+date: 2026-02-22
+lastmod: 2026-02-22
+aliases:
+  - "/posts/startup-showcase/"
+  - "/startup-showcase/"
+categories: ["events", "call-for-speakers"]
+tags: ["startup showcase", "speakers", "kansas city"]
 ---
 
-**How are startups in the Kansas City region using data science to succeed?**
+**How are startups in the Kansas City region leveraging data in their business?**
 
 ## 🎤 Call for Speakers
 

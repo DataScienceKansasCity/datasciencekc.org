@@ -1,8 +1,13 @@
 ---
-title: "Data Science KC University Showcase"
+title: "Call for Speakers: University Showcase (Nov. 13, 2025)"
 description: "Annual showcase featuring data science projects and research from students and recent graduates at local universities."
-hideTitle: true
-layout: "simple"
+date: 2025-10-22
+lastmod: 2025-10-22
+aliases:
+  - "/posts/university-showcase/"
+  - "/university-showcase/"
+categories: ["events", "call-for-speakers"]
+tags: ["university showcase", "students", "kansas city"]
 ---
 
 **Connecting Students, Academia, and Industry in Kansas City**

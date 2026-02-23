@@ -12,7 +12,7 @@ const viewports: Viewport[] = [
   { name: "desktop", width: 1440, height: 900, isMobile: false }
 ];
 
-const routes = ["/", "/university-showcase/"];
+const routes = ["/", "/posts/"];
 
 for (const viewport of viewports) {
   for (const route of routes) {
