@@ -15,7 +15,7 @@ jobs:
     timeout-minutes: 20
     env:
       HUGO_VERSION: 0.148.0
-      HUGO_DEB_PATH: ~/.cache/hugo/hugo_extended_linux-amd64.deb
+      HUGO_DEB_PATH: $HOME/.cache/hugo/hugo_extended_linux-amd64.deb
     steps:
       - name: Checkout
         uses: actions/checkout@v4
