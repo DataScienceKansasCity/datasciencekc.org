@@ -74,8 +74,8 @@
   <section class="mt-6 mb-12 grid grid-cols-1 sm:grid-cols-2 gap-3">
     {{ if gt (len $upcomingEvents) 0 }}
       {{ $nextEvent := index $upcomingEvents 0 }}
-      <div>
-        <h2 class="text-sm font-semibold uppercase tracking-wide text-primary-700 dark:text-neutral-200 mb-2">Next Event</h2>
+      <div class="flex flex-col">
+        <h2 class="m-0 mb-2 text-sm font-semibold uppercase tracking-wide text-primary-700 dark:text-neutral-200">Next Event</h2>
         <div class="h-full flex flex-col rounded-lg border border-primary-500 p-4 sm:p-5 bg-neutral-50 dark:bg-neutral-800/60">
           <a href="{{ $nextEvent.url }}" target="_blank" rel="noopener noreferrer" class="block text-xl sm:text-2xl font-bold text-neutral-900 dark:text-neutral hover:underline hover:decoration-primary-500 hover:underline-offset-4">
             {{ $nextEvent.title }}
@@ -100,8 +100,8 @@
       {{ if gt (len $pinnedPosts) 0 }}
         {{ $announcementPost = index ($pinnedPosts.ByDate.Reverse) 0 }}
       {{ end }}
-      <div>
-        <h2 class="text-sm font-semibold uppercase tracking-wide text-primary-700 dark:text-neutral-200 mb-2">Announcements</h2>
+      <div class="flex flex-col">
+        <h2 class="m-0 mb-2 text-sm font-semibold uppercase tracking-wide text-primary-700 dark:text-neutral-200">Announcements</h2>
         <div class="h-full flex flex-col rounded-lg border border-primary-500 p-4 sm:p-5 bg-neutral-50 dark:bg-neutral-800/60">
           <a href="{{ $announcementPost.RelPermalink }}" class="block text-xl sm:text-2xl font-bold text-neutral-900 dark:text-neutral hover:underline hover:decoration-primary-500 hover:underline-offset-4">
             {{ $announcementPost.Title | emojify }}
