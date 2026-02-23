@@ -15,7 +15,6 @@ jobs:
     timeout-minutes: 20
     env:
       HUGO_VERSION: 0.148.0
-      HUGO_DEB_PATH: $HOME/.cache/hugo/hugo_extended_linux-amd64.deb
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -49,11 +48,13 @@ jobs:
       - name: Download Hugo package
         if: steps.cache-hugo.outputs.cache-hit != 'true'
         run: |
+          HUGO_DEB_PATH="${HOME}/.cache/hugo/hugo_extended_linux-amd64.deb"
           mkdir -p ~/.cache/hugo
           wget -O "${HUGO_DEB_PATH}" https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_linux-amd64.deb
 
       - name: Install Hugo CLI
         run: |
+          HUGO_DEB_PATH="${HOME}/.cache/hugo/hugo_extended_linux-amd64.deb"
           sudo dpkg -i "${HUGO_DEB_PATH}"
 
       - name: Install dependencies
