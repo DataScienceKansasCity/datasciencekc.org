@@ -1,3 +1,122 @@
+{{ $meetupIcalURL := "https://www.meetup.com/data-science-kc/events/ical/" }}
+{{ $icalContent := "" }}
+{{ with try (resources.GetRemote $meetupIcalURL) }}
+  {{ with .Err }}
+    {{ warnf "Unable to fetch Meetup iCal feed: %s" . }}
+  {{ else }}
+    {{ with .Value }}
+      {{ $icalContent = .Content | string }}
+    {{ end }}
+  {{ end }}
+{{ end }}
+
+{{ $icalContent = replace $icalContent "\r\n" "\n" }}
+{{ $icalContent = replaceRE "\n[ \t]" "" $icalContent }}
+{{ $eventBlocks := findRE `(?s)BEGIN:VEVENT.*?END:VEVENT` $icalContent }}
+{{ $upcomingEvents := slice }}
+
+{{ range $eventBlocks }}
+  {{ $summary := "" }}
+  {{ $eventURL := "" }}
+  {{ $startDisplay := "" }}
+
+  {{ $summaryMatch := findRESubmatch `(?m)^SUMMARY:(.+)$` . }}
+  {{ if gt (len $summaryMatch) 0 }}
+    {{ $summary = replace (index (index $summaryMatch 0) 1) `\,` "," }}
+  {{ end }}
+
+  {{ $urlMatch := findRESubmatch `(?m)^URL(?:;[^:]+)?:(.+)$` . }}
+  {{ if gt (len $urlMatch) 0 }}
+    {{ $eventURL = index (index $urlMatch 0) 1 }}
+  {{ end }}
+
+  {{ $startMatch := findRESubmatch `(?m)^DTSTART(?:;([^:]+))?:(.+)$` . }}
+  {{ if gt (len $startMatch) 0 }}
+    {{ $startParams := index (index $startMatch 0) 1 }}
+    {{ $startRaw := index (index $startMatch 0) 2 }}
+    {{ $sourceTZ := "America/Chicago" }}
+    {{ with findRESubmatch `TZID=([^;]+)` $startParams }}
+      {{ $sourceTZ = index (index . 0) 1 }}
+    {{ end }}
+    {{ if and (ge (len $startRaw) 8) (in $startRaw "T") }}
+      {{ $datePart := substr $startRaw 0 8 }}
+      {{ $timePart := substr $startRaw 9 }}
+      {{ $hasZulu := strings.HasSuffix $timePart "Z" }}
+      {{ if $hasZulu }}
+        {{ $timePart = substr $timePart 0 (sub (len $timePart) 1) }}
+      {{ end }}
+      {{ if eq (len $timePart) 4 }}
+        {{ $timePart = printf "%s00" $timePart }}
+      {{ end }}
+      {{ if ge (len $timePart) 6 }}
+        {{ $startISO := printf "%s-%s-%sT%s:%s:%s" (substr $datePart 0 4) (substr $datePart 4 2) (substr $datePart 6 2) (substr $timePart 0 2) (substr $timePart 2 2) (substr $timePart 4 2) }}
+        {{ if $hasZulu }}
+          {{ $startISO = printf "%sZ" $startISO }}
+          {{ $startDisplay = (time.AsTime $startISO "America/Chicago").Format "Monday, January 2, 2006 at 3:04 PM MST" }}
+        {{ else }}
+          {{ $startDisplay = (time.AsTime $startISO $sourceTZ).Format "Monday, January 2, 2006 at 3:04 PM MST" }}
+        {{ end }}
+      {{ end }}
+    {{ else if ge (len $startRaw) 8 }}
+      {{ $startISODate := printf "%s-%s-%s" (substr $startRaw 0 4) (substr $startRaw 4 2) (substr $startRaw 6 2) }}
+      {{ $startDisplay = (time.AsTime $startISODate "America/Chicago").Format "Monday, January 2, 2006" }}
+    {{ end }}
+  {{ end }}
+
+  {{ if and (ne $summary "") (ne $eventURL "") }}
+    {{ $upcomingEvents = $upcomingEvents | append (dict "title" $summary "url" $eventURL "start" $startDisplay) }}
+  {{ end }}
+{{ end }}
+
+{{ $recentPosts := where .Site.RegularPages "Type" "in" .Site.Params.mainSections }}
+{{ $recentPosts = $recentPosts.ByDate.Reverse }}
+{{ if or (gt (len $upcomingEvents) 0) (gt (len $recentPosts) 0) }}
+  <section class="mt-6 mb-12 grid grid-cols-1 sm:grid-cols-2 gap-3">
+    {{ if gt (len $upcomingEvents) 0 }}
+      {{ $nextEvent := index $upcomingEvents 0 }}
+      <div>
+        <h2 class="text-sm font-semibold uppercase tracking-wide text-primary-700 dark:text-neutral-200 mb-2">Next Event</h2>
+        <div class="h-full flex flex-col rounded-lg border border-primary-500 p-4 sm:p-5 bg-neutral-50 dark:bg-neutral-800/60">
+          <a href="{{ $nextEvent.url }}" target="_blank" rel="noopener noreferrer" class="block text-xl sm:text-2xl font-bold text-neutral-900 dark:text-neutral hover:underline hover:decoration-primary-500 hover:underline-offset-4">
+            {{ $nextEvent.title }}
+          </a>
+          {{ with $nextEvent.start }}
+            <p class="m-0 mt-2 text-sm text-neutral-600 dark:text-neutral-300">
+              {{ . }}
+            </p>
+          {{ end }}
+          <div class="mt-4">
+            <a href="/meetup" class="inline-flex items-center rounded-md bg-primary-600 px-4 py-2 text-sm font-semibold text-white hover:bg-primary-700 dark:bg-primary-500 dark:hover:bg-primary-400">
+              See all events on Meetup
+            </a>
+          </div>
+        </div>
+      </div>
+    {{ end }}
+
+    {{ if gt (len $recentPosts) 0 }}
+      {{ $announcementPost := index $recentPosts 0 }}
+      {{ $pinnedPosts := where $recentPosts "Params.pinHome" true }}
+      {{ if gt (len $pinnedPosts) 0 }}
+        {{ $announcementPost = index ($pinnedPosts.ByDate.Reverse) 0 }}
+      {{ end }}
+      <div>
+        <h2 class="text-sm font-semibold uppercase tracking-wide text-primary-700 dark:text-neutral-200 mb-2">Announcements</h2>
+        <div class="h-full flex flex-col rounded-lg border border-primary-500 p-4 sm:p-5 bg-neutral-50 dark:bg-neutral-800/60">
+          <a href="{{ $announcementPost.RelPermalink }}" class="block text-xl sm:text-2xl font-bold text-neutral-900 dark:text-neutral hover:underline hover:decoration-primary-500 hover:underline-offset-4">
+            {{ $announcementPost.Title | emojify }}
+          </a>
+          <div class="mt-4">
+            <a href="{{ $announcementPost.RelPermalink }}" class="inline-flex items-center rounded-md bg-primary-600 px-4 py-2 text-sm font-semibold text-white hover:bg-primary-700 dark:bg-primary-500 dark:hover:bg-primary-400">
+              Read more
+            </a>
+          </div>
+        </div>
+      </div>
+    {{ end }}
+  </section>
+{{ end }}
+
 <article class="max-w-full prose dark:prose-invert">
   {{ if not .Params.hideTitle }}
     {{ with .Title }}
@@ -8,6 +127,3 @@
   {{ end }}
   <section>{{ .Content }}</section>
 </article>
-<section>
-  {{ partial "recent-articles/main.html" . }}
-</section>

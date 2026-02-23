@@ -7,11 +7,10 @@ test("home page smoke test", async ({ page }) => {
   await expect(
     page.getByText("Connecting, Learning, and Growing Together in the Heart of America")
   ).toBeVisible();
+  await expect(page.getByRole("heading", { level: 2, name: "Announcements" })).toBeVisible();
   await expect(page.getByRole("link", { name: "Home" })).toBeVisible();
-  await expect(page.getByRole("link", { name: "Startup Showcase" })).toBeVisible();
-  await expect(page.getByRole("link", { name: "University Showcase" })).toBeVisible();
-  await expect(page.locator('a[href*="meetup.com/data-science-kc/events"]')).toBeVisible();
-
+  await expect(page.getByRole("link", { name: "Announcements" })).toBeVisible();
+  await expect(page.getByRole("link", { name: /See all events on Meetup/i })).toBeVisible();
   await expect(page.locator('iframe[src*="youtube.com"]')).toBeAttached();
 });
 
@@ -27,23 +26,35 @@ test("mobile nav opens, shows links, and closes", async ({ page }) => {
 
   await expect(menuWrapper).toHaveCSS("visibility", "visible");
   await expect(menuWrapper.getByRole("link", { name: "Home" })).toBeVisible();
-  await expect(menuWrapper.getByRole("link", { name: "Startup Showcase" })).toBeVisible();
-  await expect(menuWrapper.getByRole("link", { name: "University Showcase" })).toBeVisible();
+  await expect(menuWrapper.getByRole("link", { name: "Announcements" })).toBeVisible();
 
   await page.getByTestId("mobile-menu-close-button").click();
   await expect(menuWrapper).toHaveCSS("visibility", "hidden");
 });
 
-test("university showcase page loads", async ({ page }) => {
-  await page.goto("/university-showcase/");
-  await expect(page).toHaveTitle(/University Showcase/i);
+test("announcements index page loads", async ({ page }) => {
+  await page.goto("/posts/");
+  await expect(page).toHaveTitle(/Announcements/i);
+  await expect(page.locator("main header h1")).toHaveText(/Announcements/i);
   await expect(
-    page.getByRole("heading", { level: 1, name: /Data Science KC University Showcase/i })
+    page.getByRole("link", { name: /Call for Speakers: Startup Showcase \(May 14, 2026\)/i })
   ).toBeVisible();
 });
 
-test("startup showcase page loads", async ({ page }) => {
-  await page.goto("/startup-showcase/");
-  await expect(page).toHaveTitle(/Startup Showcase/i);
-  await expect(page.getByRole("heading", { name: /Call for Speakers/i })).toBeVisible();
+test("home nav link from posts returns to home page", async ({ page }) => {
+  await page.goto("/posts/");
+  await page.getByRole("link", { name: "Home" }).first().click();
+  await expect(page).toHaveURL("/");
+});
+
+test("call for speakers post loads", async ({ page }) => {
+  await page.goto("/posts/2026-02-22-startup-showcase/");
+  await expect(page).toHaveTitle(/Call for Speakers: Startup Showcase \(May 14, 2026\)/i);
+  await expect(page.locator("main article header h1")).toContainText("Startup Showcase");
+});
+
+test("university showcase post loads", async ({ page }) => {
+  await page.goto("/posts/2025-10-22-university-showcase/");
+  await expect(page).toHaveTitle(/Call for Speakers: University Showcase \(Nov\. 13, 2025\)/i);
+  await expect(page.getByRole("heading", { name: /About the University Showcase/i })).toBeVisible();
 });
