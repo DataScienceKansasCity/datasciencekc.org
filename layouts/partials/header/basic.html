@@ -22,8 +22,8 @@
     {{ end }}
   {{ end }}
   {{ if not .Site.Params.disableTextInHeader | default true }}
-    <a href="{{ "" | relLangURL }}" class="text-base font-medium truncate min-w-0 shrink">
-      <h1 class="text-2xl font-bold m-0">{{ .Site.Title | markdownify }}</h1>
+    <a href="{{ "" | relLangURL }}" class="text-base font-medium min-w-0 shrink">
+      <h1 class="m-0 text-xl sm:text-2xl font-bold leading-tight">Data Science <wbr>Kansas&nbsp;City</h1>
     </a>
   {{ end }}
   <div class="flex items-center ms-auto">
