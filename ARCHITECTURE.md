@@ -61,6 +61,19 @@ DataScienceKansasCity.github.io/
 3. **Run the development server**
 
    ```bash
+   ./serve-local.sh
+   ```
+
+   This runs `hugo server -D` with local defaults and serves the site at `http://localhost:1313`.
+   You can still pass through Hugo flags when needed:
+
+   ```bash
+   ./serve-local.sh --disableFastRender
+   ```
+
+   The raw Hugo command is also supported:
+
+   ```bash
    hugo server -D
    ```
 

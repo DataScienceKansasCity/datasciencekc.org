@@ -32,8 +32,11 @@ We welcome various types of contributions:
    - Run the development server:
 
      ```bash
-     hugo server -D
+     ./serve-local.sh
      ```
+
+     This wraps `hugo server -D` with local defaults and hosts the site at `http://localhost:1313`.
+     You can also run `hugo server -D` directly.
 
 3. **Create a feature branch**
 
@@ -149,6 +152,9 @@ We welcome various types of contributions:
 hugo --minify
 
 # Run the development server
+./serve-local.sh
+
+# Or run Hugo directly
 hugo server -D
 
 # Check for build errors
