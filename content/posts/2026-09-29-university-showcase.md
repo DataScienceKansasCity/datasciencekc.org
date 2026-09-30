@@ -24,6 +24,8 @@ The **Data Science KC University Showcase** is our third annual Student Showcase
 - **📍 Location:** [Burns & McDonnell](https://www.burnsmcd.com/), [9450 Ward Parkway, Kansas City, MO](https://maps.app.goo.gl/NoLmfsqWzC6j3wEn9)
 - **📊 What to Present?** Course projects, research, side projects, your favorite data science tools, interdisciplinary work using statistics, machine learning, data visualization, etc. From biostatistics and business intelligence to econometrics and social sciences, all data-adjacent topics and levels of experience are welcome!
 
+**Please note:** This year's showcase will be in a different building at Burns & McDonnell than last year.
+
 This event provides a unique opportunity for:
 - **Students** to present their work to industry professionals
 - **Recent graduates** to showcase their skills to potential employers
