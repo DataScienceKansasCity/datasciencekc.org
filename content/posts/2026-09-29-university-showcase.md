@@ -13,7 +13,7 @@ tags: ["university showcase", "students", "kansas city"]
 
 ## 🎓 About the University Showcase
 
-The **Data Science KC University Showcase** is our annual event that brings together students, recent graduates, and early career professionals to share their data science projects, research, and academic work with the broader Kansas City data community.
+The **Data Science KC University Showcase** is our third annual Student Showcase event, bringing together students, recent graduates, and early career professionals to share their data science projects, research, and academic work with the broader Kansas City data community.
 
 <span style="font-size:1.5em;">[**✅ Register for the event on Meetup**](https://www.meetup.com/data-science-kc/events/316505128/)</span>
 
