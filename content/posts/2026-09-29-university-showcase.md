@@ -3,6 +3,7 @@ title: "Call for Speakers: University Showcase (Nov. 12, 2026)"
 description: "Annual showcase featuring data science projects and research from students and recent graduates at local universities."
 date: 2026-09-29
 lastmod: 2026-09-29
+hide-from-front-page-after-date: "2026-11-12"
 aliases:
   - "/university-showcase/"
 categories: ["events", "call-for-speakers"]
