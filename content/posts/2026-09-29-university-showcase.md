@@ -1,5 +1,5 @@
 ---
-title: "Call for Speakers: University & Early Career Showcase (Nov. 12, 2026)"
+title: "Call for Speakers: University Showcase (Nov. 12, 2026)"
 description: "Annual showcase featuring data science projects and research from students and recent graduates at local universities."
 date: 2026-09-29
 lastmod: 2026-09-29
@@ -19,9 +19,9 @@ The **Data Science KC University Showcase** is our third annual Student Showcase
 
 <span style="font-size:1.5em;">[**🎤 Submit your talk: Sign up to present!**](https://docs.google.com/forms/d/1WlmbJ2sjKnnNVCKGhDXJniJgPaHLys1sszCwUI-Mzp0/viewform)</span>
 
-- **📅 Time:** Thursday, November 12, 2026 @ 6:00 PM (event runs until 7:30 PM)
+- **📅 Time:** Thursday, November 12, 2026 @ 6:00 PM
 - **⚡ Format:** Lightning talks, 1-3 slides (7 minutes each with 2 minutes for Q&A)
-- **📍 Location:** [Burns & McDonnell](https://www.burnsmcd.com/), [9450 Ward Parkway, Kansas City, MO](https://maps.google.com/?q=Burns+%26+McDonnell+9450+Ward+Parkway+Kansas+City+MO)
+- **📍 Location:** [Burns & McDonnell](https://www.burnsmcd.com/), [9450 Ward Parkway, Kansas City, MO](https://maps.google.com/?q=Burns+%26+McDonnell+9450+Ward+Parkway+Kansas+City+MO) | [Venue Map (PDF)](/university-showcase-map.pdf)
 - **📊 What to Present?** Course projects, research, side projects, your favorite data science tools, interdisciplinary work using statistics, machine learning, data visualization, etc. From biostatistics and business intelligence to econometrics and social sciences, all data-adjacent topics and levels of experience are welcome!
 
 This event provides a unique opportunity for:
@@ -29,8 +29,6 @@ This event provides a unique opportunity for:
 - **Recent graduates** to showcase their skills to potential employers
 - **Industry professionals** to discover emerging talent and innovative research
 - **Faculty** to connect with industry partners and collaborators
-
-The showcase features 7-minute presentations with 2 minutes for Q&A. Refreshments (food and drink) are provided!
 
 Students, recent graduates, and early-career professionals are encouraged to [submit a presentation idea by October 16](https://docs.google.com/forms/d/1WlmbJ2sjKnnNVCKGhDXJniJgPaHLys1sszCwUI-Mzp0/viewform).
 
