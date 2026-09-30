@@ -81,6 +81,7 @@ test("university showcase post loads", async ({ page }) => {
     "href",
     "https://docs.google.com/forms/d/1WlmbJ2sjKnnNVCKGhDXJniJgPaHLys1sszCwUI-Mzp0/viewform"
   );
-  await expect(page.getByText(/November 12, 2026, 6:00–7:30 PM CST/)).toBeVisible();
+  await expect(page.getByText(/Thursday, November 12, 2026 @ 6:00 PM/)).toBeVisible();
+  await expect(page.getByText(/event runs until 7:30 PM CST/)).toBeVisible();
   await expect(page.getByText(/submit a presentation idea by October 16/)).toBeVisible();
 });
