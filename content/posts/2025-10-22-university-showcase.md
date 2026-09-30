@@ -3,8 +3,6 @@ title: "Call for Speakers: University Showcase (Nov. 13, 2025)"
 description: "Annual showcase featuring data science projects and research from students and recent graduates at local universities."
 date: 2025-10-22
 lastmod: 2025-10-22
-aliases:
-  - "/posts/university-showcase/"
 categories: ["events", "call-for-speakers"]
 tags: ["university showcase", "students", "kansas city"]
 ---
