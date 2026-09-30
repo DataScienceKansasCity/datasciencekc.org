@@ -70,7 +70,17 @@ test("call for speakers post loads", async ({ page }) => {
 });
 
 test("university showcase post loads", async ({ page }) => {
-  await page.goto("/posts/2025-10-22-university-showcase/");
-  await expect(page).toHaveTitle(/Call for Speakers: University Showcase \(Nov\. 13, 2025\)/i);
+  await page.goto("/university-showcase/");
+  await expect(page).toHaveTitle(/Call for Speakers: University & Early Career Showcase \(Nov\. 12, 2026\)/i);
   await expect(page.getByRole("heading", { name: /About the University Showcase/i })).toBeVisible();
+  await expect(page.getByRole("link", { name: /Register for the event on Meetup/i })).toHaveAttribute(
+    "href",
+    "https://www.meetup.com/data-science-kc/events/316505128/"
+  );
+  await expect(page.getByRole("link", { name: /Submit a presentation idea/i })).toHaveAttribute(
+    "href",
+    "https://docs.google.com/forms/d/1WlmbJ2sjKnnNVCKGhDXJniJgPaHLys1sszCwUI-Mzp0/viewform"
+  );
+  await expect(page.getByText(/November 12, 2026, 6:00–7:30 PM CST/)).toBeVisible();
+  await expect(page.getByText(/submit a presentation idea by October 16/)).toBeVisible();
 });

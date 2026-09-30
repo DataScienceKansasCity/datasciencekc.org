@@ -5,7 +5,6 @@ date: 2025-10-22
 lastmod: 2025-10-22
 aliases:
   - "/posts/university-showcase/"
-  - "/university-showcase/"
 categories: ["events", "call-for-speakers"]
 tags: ["university showcase", "students", "kansas city"]
 ---
