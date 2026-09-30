@@ -1,6 +1,6 @@
 ---
 title: "Call for Speakers: University & Early Career Showcase (Nov. 12, 2026)"
-description: "Join Data Science KC for an evening of lightning talks by university students, recent graduates, and early-career professionals."
+description: "Annual showcase featuring data science projects and research from students and recent graduates at local universities."
 date: 2026-09-29
 lastmod: 2026-09-29
 aliases:
