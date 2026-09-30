@@ -17,7 +17,7 @@ The **Data Science KC University Showcase** is our third annual Student Showcase
 
 <span style="font-size:1.5em;">[**✅ Register for the event on Meetup**](https://www.meetup.com/data-science-kc/events/316505128/)</span>
 
-<span style="font-size:1.5em;">[**🎤 Submit a presentation idea**](https://docs.google.com/forms/d/1WlmbJ2sjKnnNVCKGhDXJniJgPaHLys1sszCwUI-Mzp0/viewform)</span>
+<span style="font-size:1.5em;">[**🎤 Submit your talk: Sign up to present!**](https://docs.google.com/forms/d/1WlmbJ2sjKnnNVCKGhDXJniJgPaHLys1sszCwUI-Mzp0/viewform)</span>
 
 - **📅 Time:** Thursday, November 12, 2026 @ 6:00 PM (event runs until 7:30 PM)
 - **⚡ Format:** Lightning talks, 1-3 slides (7 minutes each with 2 minutes for Q&A)

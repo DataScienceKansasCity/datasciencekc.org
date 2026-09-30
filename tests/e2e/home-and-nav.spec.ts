@@ -78,7 +78,7 @@ test("university showcase post loads", async ({ page }) => {
     "href",
     "https://www.meetup.com/data-science-kc/events/316505128/"
   );
-  await expect(page.getByRole("link", { name: /Submit a presentation idea/i })).toHaveAttribute(
+  await expect(page.getByRole("link", { name: /Submit your talk: Sign up to present/i })).toHaveAttribute(
     "href",
     "https://docs.google.com/forms/d/1WlmbJ2sjKnnNVCKGhDXJniJgPaHLys1sszCwUI-Mzp0/viewform"
   );
