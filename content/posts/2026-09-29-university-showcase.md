@@ -22,7 +22,7 @@ The **Data Science KC University Showcase** is our third annual Student Showcase
 
 - **📅 Time:** Thursday, November 12, 2026 @ 6:00 PM
 - **⚡ Format:** Lightning talks, 1-3 slides (7 minutes each with 2 minutes for Q&A)
-- **📍 Location:** [Burns & McDonnell](https://www.burnsmcd.com/), [9450 Ward Parkway, Kansas City, MO](https://maps.app.goo.gl/NoLmfsqWzC6j3wEn9)
+- **📍 Location:** [Burns & McDonnell](https://www.burnsmcd.com/), [9450 Ward Parkway, Kansas City, MO](https://maps.app.goo.gl/NoLmfsqWzC6j3wEn9) | [Venue Map (PDF)](/university-showcase-map-2026.pdf)
 - **📊 What to Present?** Course projects, research, side projects, your favorite data science tools, interdisciplinary work using statistics, machine learning, data visualization, etc. From biostatistics and business intelligence to econometrics and social sciences, all data-adjacent topics and levels of experience are welcome!
 
 **Please note:** This year's showcase will be in a different building at Burns & McDonnell than last year.

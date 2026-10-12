@@ -19,7 +19,7 @@ The **Data Science KC University Showcase** is our annual event that brings toge
 
 - **📅 Time:** Thursday, November 13, 2025 @ 6:00 PM
 - **⚡ Format:** Lightning talks, 1-3 slides (7 minutes each with 2 minutes for Q&A)
-- **📍 Location:** [Burns & McDonnell](https://www.burnsmcd.com/), [9400 Ward Parkway, Kansas City, MO](https://maps.app.goo.gl/zZMGDJj8ysM3AHCW9) | [Venue Map (PDF)](/university-showcase-map.pdf)
+- **📍 Location:** [Burns & McDonnell](https://www.burnsmcd.com/), [9400 Ward Parkway, Kansas City, MO](https://maps.app.goo.gl/zZMGDJj8ysM3AHCW9) | [Venue Map (PDF)](/university-showcase-map-2025.pdf)
 - **📊 What to Present?** Course projects, research, side projects, your favorite data science tools, interdisciplinary work using statistics, machine learning, data visualization, etc. From biostatistics and business intelligence to econometrics and social sciences, all data-adjacent topics and levels of experience are welcome!
 
 This event provides a unique opportunity for:
