@@ -33,7 +33,7 @@ This event provides a unique opportunity for:
 - **Industry professionals** to discover emerging talent and innovative research
 - **Faculty** to connect with industry partners and collaborators
 
-Students, recent graduates, and early-career professionals are encouraged to [submit a presentation idea by October 16](https://docs.google.com/forms/d/1WlmbJ2sjKnnNVCKGhDXJniJgPaHLys1sszCwUI-Mzp0/viewform).
+Students, recent graduates, and early-career professionals are encouraged to [submit a presentation idea](https://docs.google.com/forms/d/1WlmbJ2sjKnnNVCKGhDXJniJgPaHLys1sszCwUI-Mzp0/viewform).
 
 ---
 

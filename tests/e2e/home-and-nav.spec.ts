@@ -93,5 +93,5 @@ test("university showcase post loads", async ({ page }) => {
   );
   await expect(page.getByText(/Thursday, November 12, 2026 @ 6:00 PM/)).toBeVisible();
   await expect(page.getByText(/different building at Burns & McDonnell than last year/i)).toBeVisible();
-  await expect(page.getByText(/submit a presentation idea by October 16/)).toBeVisible();
+  await expect(page.getByText(/submit a presentation idea/i)).toBeVisible();
 });
